@@ -9,6 +9,8 @@
   "bin": {
     "create-dexapp": "./dist/index.js"
   },
+  "repository": "https://github.com/dexNivaldo/create-dexapp",
+  "homepage": "https://github.com/dexNivaldo/create-dexapp#readme",
   "license": "MIT",
   "devDependencies": {
     "@types/ejs": "^2.6.0",
