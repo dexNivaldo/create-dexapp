@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-primary;
+  font-size: 14px;
+}
+
+.main-container-layout {
+  display: flex;
+  height: 100vh;
+}
+
+@layer components {
+  .title {
+    @apply font-bold text-primary;
+    font-size: 44px;
+  }
+
+  .title2 {
+    @apply font-bold text-primary;
+    font-size: 24px;
+  }
+  
+  .subtitle {
+    @apply font-normal text-primary;
+    font-size: 24px;
+  }
+  
+  .label {
+    @apply font-semibold mb-2 block truncate text-primary;
+  
+    &.disabled {
+      @apply text-app-gray-800;
+    }
+  }
+
+  .separator-2 {
+    @apply bg-app-gray-200;
+    height: 2px;
+    width: 100%;
+  }
+
+  .separator {
+    @apply bg-app-gray-200;
+    height: 1px;
+    width: 100%;
+  }
+
+  .vertical-separator {
+    @apply w-[1px] bg-app-gray-200 min-h-full;
+  }
+
+  .badge {
+    @apply bg-app-gray-900 text-white py-1 rounded-lg text-xs font-semibold px-2;
+  }
+}
+
+//scrollbar
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bebebe;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+// popover
+.popover-open {
+  .trigger-filter {
+    @apply bg-primary ring-0 text-white;
+  }
+}
+
+// sweet alert
+
+.swal2-html-container {
+  color: red;
+}
+
+.page-content-height {
+  height: calc(100vh - 92px);
+}

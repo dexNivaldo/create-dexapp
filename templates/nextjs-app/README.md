@@ -1,0 +1,1 @@
+Nextjs app template for hpm monorepo
