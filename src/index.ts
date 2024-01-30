@@ -46,7 +46,7 @@ export interface CliOptions {
 }
 
 inquirer.prompt(QUESTIONS)
-  .then(answers => {
+  .then((answers: any) => {
 
     answers = Object.assign({}, answers, yargs.argv);
 
