@@ -42,6 +42,7 @@ export interface CliOptions {
   templateName: string
   templatePath: string
   tartgetPath: string
+  installDependencies: boolean
   config: TemplateConfig
 }
 
@@ -52,6 +53,7 @@ inquirer.prompt(QUESTIONS)
 
     const projectChoice = answers['template'];
     const projectName = answers['name'];
+    const installDependencies: string = yargs.argv['install'] || 'false'
     const templatePath = path.join(__dirname, 'templates', projectChoice);
     const tartgetPath = path.join(CURR_DIR, projectName);
     const templateConfig = getTemplateConfig(templatePath);
@@ -61,6 +63,7 @@ inquirer.prompt(QUESTIONS)
       templateName: projectChoice,
       templatePath,
       tartgetPath,
+      installDependencies: JSON.parse(installDependencies),
       config: templateConfig
     }
 
@@ -117,8 +120,8 @@ function createProject(projectPath: string) {
 }
 
 function postProcess(options: CliOptions) {
-  if (isNode(options)) {
-    return postProcessNode(options);
+  if (isNode(options) && options.installDependencies) {
+    return postProcessNode(options); // install dependencies
   }
   return true;
 }
