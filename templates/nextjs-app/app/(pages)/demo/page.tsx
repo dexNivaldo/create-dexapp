@@ -1,3 +1,3 @@
-export default function DemoPage() {
+export default function DemoPage () {
   return <>demo page</>
 }

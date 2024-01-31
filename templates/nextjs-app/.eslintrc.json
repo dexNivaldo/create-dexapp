@@ -1,0 +1,7 @@
+{
+  "extends": ["@dexfreight-dev/eslint-config/config.json"],
+  "ignorePatterns": ["next-env.d.ts"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}
