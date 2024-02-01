@@ -3,10 +3,15 @@ All notable changes to this project will be documentend in this file
 
 ## [next-release]
 
+## [1.0.2] - 2024-02-01
+
 ### Added
 - [b725a1f](https://github.com/dexNivaldo/create-dexapp/commit/b725a1f443a5a5569c2d247916c1111b19fd9acb) dynamic next config base path
 - CHANGELOG
 - [d8f9bbe](https://github.com/dexNivaldo/create-dexapp/commit/d8f9bbe4918645bef8ce4c009178ab42dafd6782) Adding eslint config to nextjs-app template
+
+### Updated
+- [9116b2c](https://github.com/dexNivaldo/create-dexapp/commit/9116b2c4c3228b40c76b38cbcc7c40b903d9890e) Fix dependencies vulnerabilities
 
 ## [1.0.1] - 2024-01-30
 - [eada0d7](https://github.com/dexNivaldo/create-dexapp/commit/eada0d7db8871c663da7e26768cf9e9adc7bed75) Adding install dependencies cli option
